@@ -31,7 +31,7 @@ pytest autopsy-platform                                  # 186 tests, no Bob nee
 
 # the live demo: a believable shop you can break, with Autopsy watching it (see "The live demo")
 python plugins/acme_shop/demo/run_demo.py
-python plugins\acme_shop\demo\run_demo.py --autopsy-port 8766
+python plugins/acme_shop/demo/run_demo.py --autopsy-port 8766
 
 # the scripted scenarios against the Acme Shop test plug-in (bash)
 export AUTOPSY_PYTHON="$(which python)"
