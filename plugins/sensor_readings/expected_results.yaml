@@ -1,0 +1,3 @@
+scenarios:
+  S0: {root_dataset: none, root_check: none, severity: none}
+  S1: {root_dataset: readings, root_check: [check_freshness, check_volume], severity: SEV3}

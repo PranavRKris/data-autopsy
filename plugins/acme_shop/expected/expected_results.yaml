@@ -1,0 +1,7 @@
+scenarios:
+  S0: {root_dataset: none, root_check: none, severity: none}
+  S1: {root_dataset: orders_raw, root_check: find_duplicates, severity: SEV1}
+  S2: {root_dataset: orders_raw, root_check: check_schema, severity: SEV2}
+  S3: {root_dataset: orders_raw, root_check: profile_dataset, severity: SEV2}
+  S4: {root_dataset: orders_raw, root_check: [check_freshness, check_volume], severity: SEV3}
+  S5: {root_dataset: orders_raw, root_check: profile_dataset, severity: SEV1}

@@ -1,0 +1,10 @@
+project: sensor_readings
+connector: duckdb
+connection:
+  path_env: SENSOR_DB_PATH
+datasets:
+  - name: readings
+    source: readings
+    business_visible: true
+    roles: {event_time: recorded_at, key: [sensor_id, recorded_at], measure: [temperature_c], required: [sensor_id]}
+    expected: {max_age_hours: 6, value_range: {temperature_c: [-20, 60]}}
